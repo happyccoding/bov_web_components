@@ -1,0 +1,47 @@
+.tabComponent {
+	position: relative;
+	padding: 20px;
+	font-family: 'Futura', sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tabComponent input {
+	display: none;
+}
+
+.tabComponent label {
+	padding: 10px;
+	cursor: pointer;
+	transition: all .2s ease-in;
+	color: grey;
+	background-color:#F3F3F3;
+}
+
+
+.tabComponent input[type="radio"]:checked + label {
+    background-color: #16A1E7;
+	color: white;
+}
+
+
+.tabComponent input[type="radio"]:not(:checked) + label:hover {
+	background-color: #16A1E7;
+	color: white;
+}
+
+.tabComponent .tab-content {
+	position: absolute;
+	opacity: 0;
+	padding: 10px;
+	width: 100%;
+	font-weight: 100; 
+}
+
+
+.tabComponent input[type="radio"]:checked + label + .tab-content {
+	opacity: 1;
+	background-color: #F0F9FF;
+	border-top: solid 3px  #16A1E7;
+	top: 45px;
+}
