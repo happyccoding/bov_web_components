@@ -7,6 +7,6 @@
 
 ### 2. Tabs 
 
-* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project2-tabs)
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project2_tabs)
 * [Live demo]()
 
