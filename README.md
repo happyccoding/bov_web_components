@@ -2,11 +2,11 @@
 
 ### 1. Calculator
 
-* [Repository URL](https://github.com/happyccoding/bov-web-components/master/project1-calculator)
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project1_calculator)
 * [Live demo]()
 
 ### 2. Tabs 
 
-* [Repository URL](https://github.com/happyccoding/bov-web-components/master/project2-tabs)
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project2-tabs)
 * [Live demo]()
 
