@@ -20,5 +20,5 @@
 * [Live demo](https://happyccoding.github.io/bov_web_components/project4_html5_forms/2.Shipping%20Form/)
 #### Scheduling Form
 * [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project4_html5_forms/3.Scheduling%20Form)
-* [Live demo](https://happyccoding.github.io/bov_web_components/project4_html5_forms/2.Scheduling%20Form/)
+* [Live demo](https://happyccoding.github.io/bov_web_components/project4_html5_forms/3.Scheduling%20Form/)
 
