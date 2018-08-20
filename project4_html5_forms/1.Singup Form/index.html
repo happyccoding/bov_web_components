@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Project Assignment 4 - SignUp Forms</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+	<div class="tabmain">
+		<h1>User Registration</h1>
+
+		<input id="tab1" type="radio" name="tabs" class="tabmenu" checked>
+		<label for="tab1" class="tablabel">Sign Up</label>
+
+		<input id="tab2" type="radio" name="tabs" class="tabmenu">
+		<label for="tab2" class="tablabel">Log In</label>
+
+		<section id="content1" class="tabsection">
+			<div class="container">
+				<form>
+					<h2>Sign Up</h2>
+
+					<label>First name</label>
+					<input type="text" placeholder="">
+					<label>Last name</label>
+					<input type="text" placeholder="">
+					<label>Email Address</label>
+					<input type="email" placeholder="">
+					<label>Date of Birth</label>
+					<input type="date">
+					<label>Password</label>
+					<input type="password" placeholder="">
+					<label>Confirm Password</label>
+					<input type="password" placeholder="">
+					<input type="submit" class="button" value="Register">
+				</form>
+			</div>
+		</section>
+
+		<section id="content2" class="tabsection">
+			<div class="container">
+				<form>
+					<h2>Login</h2>
+					<label>Username</label>
+					<input type="text" placeholder="">
+					<label>Password</label>
+					<input type="password">
+					<input type="submit" class="button" value="Login">
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label> 
+				</form>
+			</div>
+		</section>
+	</div>
+</body>

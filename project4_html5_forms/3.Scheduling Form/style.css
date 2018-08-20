@@ -1,0 +1,167 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+
+/* style forms */
+input[type=text], input[type=password], input[type=email], input[type=date], input[type=time], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+  textarea {
+    height: 4 em;
+  }
+
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  h2 {
+    margin-top: 20px;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 8px;
+    display: inline-block;
+    width: 100%;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  /* Style the container */
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 23%;
+    margin-top: 6px;
+    margin-right: 2%;
+  }
+  
+  .col-33 {
+    float: left;
+    width: 31%;
+    margin-top: 6px;
+    margin-right: 2%;
+  }
+
+  /* Floating column for labels: 50% width */
+  .col-50 {
+    float: left;
+    width: 48%;
+    margin-top: 6px;
+    margin-right: 2%;
+  }
+
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 73%;
+    margin-top: 6px;
+    margin-right: 2%;
+  }
+  
+  .col-100 {
+    float: left;
+    width: 98%;
+    margin-top: 6px;
+    margin-right: 2%;
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.alert {
+  background-color: azure;
+  font-size: 1.25em;
+  line-height: 1.65em;
+  margin-top: 30px;
+  padding: 30px 15px 15px 15px;
+  position: relative;
+}
+
+.alert, .alert:before {
+  border: 2px solid #f1f1f2;
+}
+
+.alert:before {
+  background-color: #FFA500;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  content: 'Notice';
+  color: white;
+  font-weight: 700;
+  left: -10px;
+  padding: 10px;
+  position: absolute;
+  top: -20px;
+}
+
+
+  .notification {
+    margin-top: 12px;
+    border: 2px solid #4CAF50;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    text-decoration: none;
+}
+
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+

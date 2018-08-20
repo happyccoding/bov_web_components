@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Project Assignment 4 - Shipping Forms</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div class="tabmain">
+		<h1>Shipping And Billing Address Form</h1>
+
+		<input id="tab1" type="radio" name="tabs" class="tabmenu" checked>
+		<label for="tab1" class="tablabel">Shipping & Billing</label>
+
+		<input id="tab2" type="radio" name="tabs" class="tabmenu">
+		<label for="tab2" class="tablabel">Credit Card Details</label>
+
+		<section id="content1" class="tabsection">
+			<div class="container">
+				<form>
+					<h2>Shipping Address</h2>
+					<div class="row">
+						<div class="col-50">
+							<label>First name</label>
+							<input type="text" placeholder="">
+						</div>
+						<div class="col-50">
+							<label>Last name</label>
+							<input type="text" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-100">
+							<label>Address</label>
+							<input type="text" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-50">
+							<label>City</label>
+							<input type="text" placeholder="">
+						</div>
+						<div class="col-50">
+							<label>Country</label>
+							<input type="text" placeholder="">
+						</div>
+					</div>
+					<h2>Billing Address</h2>
+					<div class="row">
+						<div class="col-50">
+							<label>First name</label>
+							<input type="text" placeholder="">
+						</div>
+						<div class="col-50">
+							<label>Last name</label>
+							<input type="text" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-100">
+								<label>Address</label>
+								<input type="text" placeholder="">
+							</div>
+						</div>
+					<div class="row">
+						<div class="col-50">
+							<label>City</label>
+							<input type="text" placeholder="">
+						</div>
+						<div class="col-50">
+							<label>Country</label>
+							<input type="text" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="alert">
+							The <u>shipping and billing address</u> provided <b>must match</b>. By checking yes, you are confirming that the information
+							supplied above matches.
+						</div>
+					</div>
+					<div class="row">
+						<div class="notification">
+							<input type="checkbox">
+							<b>Yes</b><i>, I have verified that the shipping and billing address provided is correct and matches.</i>
+						</div>
+					</div>
+					<input type="submit" class="button" value="Register">
+				</form>
+			</div>
+		</section>
+
+		<section id="content2" class="tabsection">
+			<div class="container">
+				<form>
+					<h2>Payment - Credit Card</h2>
+                    <div class="row">
+						<div class="col-50">
+							<label>Cardholder's Full Name</label>
+							<input type="text" placeholder="">
+						</div>
+						<div class="col-50">
+							<label>Credit Card No.</label>
+							<input type="text" placeholder="XXXX-XXXX-XXXX-XXXX" maxlength="19">
+						</div>
+                    <div class="row">
+						<div class="col-33">
+								<label>CSV code</label>
+								<input type="text" placeholder="" maxlength="3">
+						</div>
+						<div class="col-33">
+							<label>Expiration Month</label>
+                            <select class="input dropdown full-width" id="cc-expiration-month">
+								<option value="0">1</option>
+								<option value="1">2</option>
+								<option value="2">3</option>
+								<option value="3">4</option>
+								<option value="4">5</option>
+								<option value="5">6</option>
+								<option value="6">7</option>
+								<option value="7">8</option>
+								<option value="8">9</option>
+								<option value="9">10</option>
+								<option value="10">11</option>
+								<option value="11">12</option>
+							</select>
+						</div>
+						<div class="col-33">
+							<label>Expiration Year</label>
+                            <select class="input dropdown full-width" id="exp-year">
+								<!-- Generated Dynamically using JavaScript -->
+							</select>
+						</div>
+					</div>
+					<input type="submit" class="button" value="Submit">
+				</form>
+			</div>
+		</section>
+	</div>
+</body>
+<script type="text/javascript">
+    (function() {
+
+        var cntYear = 15;
+
+        function getYears(selectItemCount) {
+
+            var currentYear = new Date().getFullYear();
+            var htmlString;
+
+            while (selectItemCount--) {
+                htmlString += "<option value='"+currentYear+"'>"+currentYear+"</option>";
+                currentYear++;
+            }
+            document.getElementById("exp-year").insertAdjacentHTML("afterbegin", htmlString);
+        }
+
+        getYears(cntYear);
+
+    })();
+</script>
+</html>

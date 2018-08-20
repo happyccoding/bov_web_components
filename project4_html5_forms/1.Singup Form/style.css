@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  padding: 10px 0;
+  margin: 10px 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-align: left;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5em;
+}
+
+/* tabs start */
+.tabmain {
+  min-width: 320px;
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.tabsection {
+  display: none;
+  border-top: 1px solid #ddd;
+}
+
+.tabmenu {
+  display: none;
+}
+
+.tablabel {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #bbb;
+  border: 1px solid transparent;
+}
+
+.tablabel:before {
+  font-family: fontawesome;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+
+
+.tablabel:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+.tabmenu:checked + .tablabel {
+  color: #555;
+  border: 1px solid #ddd;
+  border-top: 2px solid orange;
+  border-bottom: 1px solid #fff;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4 {
+  display: block;
+}
+
+@media screen and (max-width: 650px) {
+  .tablabel {
+    font-size: 0;
+  }
+  .tablabel:before {
+    margin: 0;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tablabel {
+    padding: 15px;
+  }
+}
+
+
+/* style forms */
+[type=text], input[type=password], input[type=email], input[type=date], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  /* Style the container */
+  .container {
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+
