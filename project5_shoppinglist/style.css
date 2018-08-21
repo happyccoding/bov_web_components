@@ -1,0 +1,274 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin-left:20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.shopping-list {
+  width: 800px;
+  background-color: #F0F8FF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-list p {
+  margin: 0;
+  margin-right: 5px;
+}
+
+.shopping-list h3 {
+  margin: 0;
+  margin-bottom: 3px;
+  font-size: 1.1em;
+}
+
+.shopping-list .image {
+  margin-right: 20px;
+}
+
+.cartbtn {
+  margin-top: 20px;
+  height: 50px;
+  background-color: #4CAF50!important;
+}
+
+.cartbtn:hover {
+  background-color: rgb(119, 207, 122)!important; 
+  
+}
+
+.shopping-cart {
+  width: 800px;
+  background:#F0F8FF;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+  border-radius: 6px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 60px;
+  border-bottom: 1px solid #E1E8EE;
+  padding: 20px 30px;
+  color: #5E6977;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.item {
+  padding: 20px 30px;
+  height: 120px;
+  display: flex;
+}
+
+.item:nth-child(3) {
+  border-top:  1px solid #E1E8EE;
+  border-bottom:  1px solid #E1E8EE;
+}
+
+/* Buttons -  Delete and Like */
+.buttons {
+  position: relative;
+  padding-top: 30px;
+  margin-right: 60px;
+}
+
+.delete-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background: url("images/delete-icn.svg") no-repeat center;
+}
+
+
+/* Product Image */
+.image {
+  margin-right: 100px;
+}
+
+.thumb {
+  width: 80px;
+}
+
+/* Product Description */
+.description {
+  padding-top: 10px;
+  margin-right: 60px;
+  width: 115px;
+}
+
+.description span {
+  display: block;
+  font-size: 14px;
+  color: #43484D;
+  font-weight: 400;
+}
+
+.description span:first-child {
+  margin-bottom: 5px;
+}
+.description span:last-child {
+  font-weight: 300;
+  margin-top: 8px;
+  color: #86939E;
+}
+
+/* Product Quantity */
+.quantity {
+  padding-top: 20px;
+  margin-right: 60px;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+button[class*=btn] {
+  width: 30px;
+  height: 30px;
+  background-color: #E1E8EE;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+button:focus,
+input:focus {
+  outline:0;
+}
+
+/* Total Price */
+.total-price {
+  width: 83px;
+  padding-top: 27px;
+  text-align: center;
+  font-size: 16px;
+  color: #43484D;
+  font-weight: 300;
+}
+
+
+#cart_action {
+    padding: 10px 10px;
+    background-color: #F7F7F9;
+}
+  
+#cart_result .subtotal {
+  display: block;
+  float: right;
+  font-weight: 1.3em;
+  color: #B12704;
+
+}
+
+#cart_button{
+  clear: both;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.checkoutbtn {
+  height:50px;
+  background-color: orange!important;
+}
+
+.checkoutbtn:hover {
+  background-color: #EFBE43!important;
+
+}
+  
+#couponInput {
+    padding: 9px 10px;
+    margin: 10px;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.input-group-btn {
+    position: relative;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  
+.btn {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    background-color: #4CAF50;
+    padding: 7px 12px;
+    font-size: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.2),0 1px 2px rgba(0,0,0,.05);
+}
+  
+label {
+    font-weight: 500;
+    padding: 18px;
+}   
+
+/* Responsive */
+@media (max-width: 800px) {
+  .shopping-cart, .shopping-list {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .image img {
+    width: 50%;
+  }
+
+  .image,
+  .quantity,
+  .description,
+  .product_title,
+  .product_desc,
+  .product_action,
+  .product_price {
+    width: 100%;
+    text-align: center;
+    margin: 6px 0;
+  }
+
+  p {
+    margin-top: 20px!important;
+  }
+  .product_price {
+    display: block;
+  }
+  .buttons {
+    margin-right: 20px;
+  }
+}
