@@ -1,15 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  font: 1em 'Open Sans', sans-serif;
+  font: 1em "Open Sans", sans-serif;
   color: #555;
   background: #eee;
 }
@@ -61,8 +61,6 @@ p {
   margin-right: 10px;
 }
 
-
-
 .tablabel:hover {
   color: #888;
   cursor: pointer;
@@ -98,96 +96,98 @@ p {
   }
 }
 
-
 /* style forms */
-[type=text], input[type=password], input[type=email], input[type=date], select, textarea{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
-  }
+[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
 
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
 
-  label {
-    padding: 12px 12px 12px 0;
-    display: inline-block;
-  }
-  
-  h2 {
-    margin-top: 20px;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 8px;
-    display: inline-block;
-    width: 100%;
-  }
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #4caf50;
+  padding-bottom: 8px;
+  display: inline-block;
+  width: 100%;
+}
 
-  input[type=submit] {
-    width: 100%;
-    margin-top: 20px;
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1.2em;
-  }
-  
-  /* Style the container */
-  .container {
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
+input[type="submit"] {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
 
-  /* Floating column for labels: 25% width */
-  .col-25 {
-    float: left;
-    width: 23%;
-    margin-top: 6px;
-    margin-right: 2%;
-  }
-  
-  .col-33 {
-    float: left;
-    width: 31%;
-    margin-top: 6px;
-    margin-right: 2%;
-  }
+/* Style the container */
+.container {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
 
-  /* Floating column for labels: 50% width */
-  .col-50 {
-    float: left;
-    width: 48%;
-    margin-top: 6px;
-    margin-right: 2%;
-  }
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 23%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
 
-  /* Floating column for inputs: 75% width */
-  .col-75 {
-    float: left;
-    width: 73%;
-    margin-top: 6px;
-    margin-right: 2%;
-  }
+.col-33 {
+  float: left;
+  width: 31%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
 
-  .col-100 {
-    float: left;
-    width: 98%;
-    margin-top: 6px;
-    margin-right: 2%;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-.alert {
+/* Floating column for labels: 50% width */
+.col-50 {
+  float: left;
+  width: 48%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 73%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
+
+.col-100 {
+  float: left;
+  width: 98%;
+  margin-top: 6px;
+  margin-right: 2%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.notice-box {
   background-color: azure;
   font-size: 1.25em;
   line-height: 1.65em;
@@ -196,40 +196,33 @@ p {
   position: relative;
 }
 
-.alert, .alert:before {
-  border: 2px solid #f1f1f2;
-}
-
-.alert:before {
-  background-color: #FFA500;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  content: 'Notice';
+.notice-sign {
+  position: absolute;
+  background-color: #ffa500;
+  border-radius: 5px;
   color: white;
   font-weight: 700;
   left: -10px;
-  padding: 10px;
-  position: absolute;
+  padding: 4px 10px;
   top: -20px;
+  transform: rotate(-5deg);
 }
 
-
-  .notification {
-    margin-top: 12px;
-    border: 2px solid #4CAF50;
-    border-radius: 3px;
-    font-size: 1.1em;
-    padding: 12px 20px;
-    text-decoration: none;
+.notification {
+  margin-top: 12px;
+  border: 2px solid #4caf50;
+  border-radius: 3px;
+  font-size: 1.1em;
+  padding: 12px 20px;
+  text-decoration: none;
 }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
-    }
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
   }
-
-
-
+}

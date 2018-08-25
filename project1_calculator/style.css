@@ -45,7 +45,7 @@ body {
   
 
 input[type=button]:hover {
-    background-color: #D3D3D3;
+    background-color: rgba(207, 233, 134, 0.5);
     color: grey;
 }
 

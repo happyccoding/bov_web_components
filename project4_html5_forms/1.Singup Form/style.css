@@ -1,6 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 *, *:before, *:after {
   margin: 0;
@@ -100,7 +99,7 @@ p {
 
 
 /* style forms */
-[type=text], input[type=password], input[type=email], input[type=date], select, textarea{
+input[type=text], input[type=password], input[type=email], input[type=date], select, textarea{
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
