@@ -31,4 +31,3 @@
 * [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project5_shoppinglist)
 * [Live demo](https://happyccoding.github.io/bov_web_components/project5_shoppinglist/)
 
-test
