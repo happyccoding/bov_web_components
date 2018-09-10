@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM utilities</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="outer-container">
+        <header>
+            <h1>DOM Techniques</h1>
+        </header>
+        <main>
+            <div class="inner-main">
+                <article id="permalink_1">
+                    <h2><a href="#">Article title</a></h2>
+                    <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua...</p>
+                    <p class="pub-date">Published 08/17/2017</p>
+                    <a class="read">Read more</a>
+                </article>
+                <article id="permalink_2">
+                    <h2><a href="#">Article title</a></h2>
+                    <p class="intro" id="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua...</p>
+                    <p class="pub-date">Published 07/13/2017</p>
+                    <a class="read">Read more</a>
+                </article>
+            </div>
+        </main>
+        <aside>
+            <h2>Related links</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script>
+        (function (window) {
+            'use strict';
+            var domUtilities = {};
+
+            domUtilities.getAncestorBySelector = function (element, selector) {
+                var parentNode = element.parentNode;
+                if (!parentNode) {
+                    return null;
+                }
+
+                var ancestor = document.querySelector(selector);
+                if (element === ancestor) {
+                    return element;
+                }
+                return this.getAncestorBySelector(element.parentNode, selector);
+
+            };
+
+            domUtilities.getSiblingsBySelector = function (element, selector) {
+                var selectedElements = document.querySelectorAll(selector);
+                var parentElement = element.parentElement;
+                var match = [];
+                for (var i = 0; i < parentElement.childNodes.length; i++) {
+                    for (var j = 0; j < selectedElements.length; j++) {
+                        if (parentElement.childNodes[i] === selectedElements[j]) {
+                            match.push(selectedElements[j]);
+                        }
+                    }
+                }
+                return match;
+            };
+
+            domUtilities.insertAfter = function (insertNode, node) {
+                var parent = node.parentElement;
+                var nextSibling = node.nextSibling;
+                parent.insertBefore(insertNode, nextSibling);
+                return insertNode;
+            };
+
+            domUtilities.swapElements = function (element_1, element_2) {
+                var parent_1 = element_1.parentElement;
+                var parent_2 = element_2.parentElement;
+                var deep = true;
+                var el_1 = element_1.cloneNode(deep);
+                var el_2 = element_2.cloneNode(deep);
+
+                var swap_1 = parent_1.replaceChild(el_2, element_1);
+                var swap_2 = parent_2.replaceChild(el_1, element_2);
+
+                if (swap_1 && swap_2) {
+                    return true;
+                } else {
+                    return false;
+                }
+            };
+
+            domUtilities.removeAll = function (selector) {
+                var selectorArray = document.querySelectorAll(selector);
+                for (var el = 0; el < selectorArray.length; el++) {
+                    var parent = selectorArray[el].parentElement;
+                    parent.removeChild(selectorArray[el]);
+                }
+                return selectorArray;
+            };
+
+            window.domUtilities = domUtilities;
+
+            var element = document.getElementById("intro");
+            console.log(window.domUtilities.getAncestorBySelector(element, ".inner-main"));
+
+            console.log(window.domUtilities.getSiblingsBySelector(element, "p"));
+
+        }(window));
+    </script>
+</body>
+
+</html>
