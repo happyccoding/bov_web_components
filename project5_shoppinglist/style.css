@@ -44,7 +44,11 @@ body {
   background-color: #4caf50 !important;
 }
 
-.cartbtn:hover {
+/* .cartbtn:hover {
+  background-color: rgb(119, 207, 122) !important;
+} */
+
+.btn:hover {
   background-color: rgb(119, 207, 122) !important;
 }
 
@@ -230,6 +234,11 @@ label {
   font-weight: 500;
   padding: 18px;
 }
+
+.display_none {
+  display: none;
+}
+
 
 /* Responsive */
 @media (max-width: 800px) {

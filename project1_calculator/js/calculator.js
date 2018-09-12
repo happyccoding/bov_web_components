@@ -36,7 +36,7 @@
             let lastChar = result.charAt(result.length - 1);
             if (operators.indexOf(lastChar) >= 0) {
                 result = result.slice(0, -1) + value;
-            } else {
+            } else if (result && result!=="0"){
                 result += value;
             }
         }

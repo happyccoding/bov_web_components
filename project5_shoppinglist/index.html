@@ -7,6 +7,7 @@
     <meta name="description" container="Bov Academy :: HTML & CSS Project Assignment - Product Listing">
     <meta name="viewport" container="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         </div>
 
         <!-- Product #1 -->
-        <div class="item">
+        <div class="item" id="item1">
             <div class="image">
                 <img src="images/1.jpg" class="thumb" alt="" />
             </div>
@@ -32,7 +33,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item2">
             <div class="image">
                 <img src="images/2.jpg" class="thumb" alt="" />
             </div>
@@ -46,7 +47,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item3">
             <div class="image">
                 <img src="images/3.jpg" class="thumb" alt="" />
             </div>
@@ -60,7 +61,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item4">
             <div class="image">
                 <img src="images/4.jpg" class="thumb" alt="" />
             </div>
@@ -74,7 +75,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item5">
             <div class="image">
                 <img src="images/5.jpg" class="thumb" alt="" />
             </div>
@@ -88,7 +89,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item6">
             <div class="image">
                 <img src="images/6.jpg" class="thumb" alt="" />
             </div>
@@ -102,7 +103,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item7">
             <div class="image">
                 <img src="images/7.jpg" class="thumb" alt="" />
             </div>
@@ -116,7 +117,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item8">
             <div class="image">
                 <img src="images/8.jpg" class="thumb" alt="" />
             </div>
@@ -130,7 +131,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item9">
             <div class="image">
                 <img src="images/9.jpg" class="thumb" alt="" />
             </div>
@@ -144,7 +145,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item10">
             <div class="image">
                 <img src="images/10.jpg" class="thumb" alt="" />
             </div>
@@ -158,7 +159,7 @@
                 <input class="btn cartbtn" type="button" value="Add To Cart">
             </div>
         </div>
-        <div class="item">
+        <div class="item" id="item11">
             <div class="image">
                 <img src="images/6.jpg" class="thumb" alt="" />
             </div>
@@ -180,107 +181,52 @@
             Shopping Cart
         </div>
 
-        <!-- Product #1 -->
-        <div class="item">
-            <div class="buttons">
-                <span class="delete-btn"></span>
-            </div>
+        <div class="item_list">
+            <div class="item item_sample display_none">
+                <div class="buttons">
+                    <span class="delete-btn"></span>
+                </div>
 
-            <div class="image">
-                <img src="images/1.jpg" class="thumb" alt="" />
-            </div>
+                <div class="image">
+                    <img src="images/1.jpg" class="thumb" alt="" />
+                </div>
 
-            <div class="description">
-                <span>Product 1</span>
-                <span>Steel Water Bottle 750 mL</span>
-                <span>Silver</span>
-            </div>
+                <div class="description">
+                    <span class="name">Product 1</span>
+                    <span class="desc">Steel Water Bottle 750 mL</span>
+                </div>
 
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="images/minus.svg" alt="" />
-                </button>
-            </div>
+                <div class="quantity">
+                    <button class="plus-btn" type="button" name="button">
+                        <img src="images/plus.svg" alt="" />
+                    </button>
+                    <input type="number" name="name" class="total-quantity" value="1">
+                    <button class="minus-btn" type="button" name="button">
+                        <img src="images/minus.svg" alt="" />
+                    </button>
+                </div>
 
-            <div class="total-price">$17</div>
+                <div class="total-price">$17</div>
+            </div>
         </div>
 
-        <!-- Product #2 -->
-        <div class="item">
-            <div class="buttons">
-                <span class="delete-btn"></span>
-            </div>
 
-            <div class="image">
-                <img src="images/2.jpg" class="thumb" alt="" />
-            </div>
-
-            <div class="description">
-                <span>Product 2</span>
-                <span>Steel Water Bottle 750 mL</span>
-                <span>White</span>
-            </div>
-
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="images/minus.svg" alt="" />
-                </button>
-            </div>
-
-            <div class="total-price">$12</div>
-        </div>
-
-        <!-- Product #3 -->
-        <div class="item">
-            <div class="buttons">
-                <span class="delete-btn"></span>
-            </div>
-
-            <div class="image">
-                <img src="images/3.jpg" class="thumb" alt="" />
-            </div>
-
-            <div class="description">
-                <span>Product 3</span>
-                <span>Steel Water Bottle 750 mL</span>
-                <span>Black</span>
-            </div>
-
-            <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                    <img src="images/plus.svg" alt="" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                    <img src="images/minus.svg" alt="" />
-                </button>
-            </div>
-
-            <div class="total-price">$10</div>
-        </div>
 
         <div id="cart_result">
             <div>
                 <label>Use Coupon Code</label>
                 <input id="couponInput" type="text">
-                <input class="btn" type="button" value="Apply Coupon">
+                <input class="btn" id="coupon-btn" type="button" value="Apply Coupon">
             </div>
             <div id="total">
-                <label class="subtotal">Cart subtotal (3 items): $39 </label>
+                <label class="subtotal">Cart subtotal (<span id="item_count">0</span> items): <span id="item_total">$0</span> </label>
                 <div id="cart_button">
-                    <input class="btn cartbtn" type="button" value="Cart">
+                    <input class="btn" type="button" value="Cart">
                     <input class="btn checkoutbtn" type="button" value="Proceed to Checkout">
-                </div> 
+                </div>
+            </div>
         </div>
-    </div>
 </body>
+<script src="productlist.js"></script>
 
 </html>
