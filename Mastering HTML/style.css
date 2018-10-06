@@ -1,0 +1,75 @@
+header
+{
+  text-align:center;
+  margin: 0px auto;
+  background: #D61F57;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 0.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width:50%;
+}
+
+section
+{
+  background: #EFF5FB;
+  text-align:center;
+  padding: 10px;
+  border: dashed 2px maroon;
+  font-family: 'Roboto', sans-serif;
+  margin: 0px auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  width: 100%;
+}
+
+table{
+  margin: 0px auto;
+}
+
+canvas{
+  border: 1px solid black;
+}
+
+footer {
+    font-size: 10px;
+}
+
+svg{
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    min-width: 50vw;
+    width: auto;
+    min-height: 15vh;
+    height: auto;
+    text-align: center;
+}
+
+thead {
+    text-align: left;
+}
+
+article {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1vh;
+    display: block;
+}
+
+article p span {
+    background: rgb(196, 245, 177);
+    border: 0.5px dashed dimgray;
+}
+
+input[type="submit"] {
+    margin-top: 1vh;
+    background: rgb(196, 245, 177);
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
+}
