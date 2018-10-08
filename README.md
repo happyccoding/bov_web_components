@@ -10,6 +10,10 @@
 * [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project2_tabs)
 * [Live demo](https://happyccoding.github.io/bov_web_components/project2_tabs/)
 
+### 3. Accordion 
+
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project2_accordion)
+* [Live demo](https://happyccoding.github.io/bov_web_components/project2_accordion/)
 
 ### 4. Html5 Forms 
 
