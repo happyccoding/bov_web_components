@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Project Assignment 1: Convert your Accordion components to work using JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+	<div class="accordion">
+		<ul>
+			<li>
+				<label for="first">Home Decor</label>
+				<input type="radio" name="accordion" id="first" onclick="openAccordion(this.id);" checked>
+				<div class="content">
+					<p>Browse through our list of Home Decor Items.</p>
+				</div>
+			</li>
+
+			<li>
+				<label for="second">Furniture</label>
+				<input type="radio" name="accordion" id="second" onclick="openAccordion(this.id);">
+				<div class="content">
+					<p>Flash sale on Living Room and Bedroom Furniture.</p>
+				</div>
+			</li>
+			<li>
+				<label for="third">Kitchen</label>
+				<input type="radio" name="accordion" id="third" onclick="openAccordion(this.id);">
+				<div class="content">
+					<p>Bring the best out of the Masterchief in you!</p>
+				</div>
+			</li>
+			<li>
+				<label for="fourth">Clearance</label>
+				<input type="radio" name="accordion" id="fourth" onclick="openAccordion(this.id);">
+				<div class="content">
+					<p>Red hot deals at affordable prices. Check out our clearance section for more details.</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Assignment 2: Create a Header Navigation Bar Component</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <ul class="topnav">
+        <li><a class="topnav__menu active" href="#about">About</a></li>
+        <li><a class="topnav__menu" href="#projects">Projects</a></li>
+        <li><a class="topnav__menu" href="#skills">Skills</a></li>
+        <li><a class="topnav__menu" href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="content-panel">
+        <div class="content-panel__content" id="about">
+            <h1>About</h1>
+            <p>About Content</p>
+        </div>
+        <div class="content-panel__content hidden" id="projects">
+            <h1>Projects</h1>
+            <p>Project Content</p>
+        </div>
+        <div class="content-panel__content hidden" id="skills">
+            <h1>Skills</h1>
+            <p>Skill Content</p>
+        </div>
+        <div class="content-panel__content hidden" id="contact">
+            <h1>Contact</h1>
+            <ul>
+                <li><a href="">LinkedIn</a></li>
+                <li><a href="">GitHub Profile</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="header.js"></script>
+
+</html>

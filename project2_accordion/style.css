@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #786E6C;
+}
+
+.accordion input[type="radio"] {
+  display: none;
+}
+
+.accordion {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.accordion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.accordion li label {
+  padding: 1rem;
+  display: block;
+  font-size: 1.5rem;
+  background-color: #E1E1E1;
+  border-bottom: solid #786E6C;
+}
+
+.accordion .content {
+  display: none;
+  padding: 1.5rem;
+  background-color:#F7F7F7;
+  overflow-y: hidden;
+}
+
+  
+.accordion input[type="radio"]:checked + .content {
+  display: block;
+
+}
+
+.accordion label:hover {
+  background-color:#C9E6F2;
+}
+
+
