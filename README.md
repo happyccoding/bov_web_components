@@ -35,3 +35,23 @@
 * [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/project5_shoppinglist)
 * [Live demo](https://happyccoding.github.io/bov_web_components/project5_shoppinglist/)
 
+### Fantasy Football Page
+
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/Mastering%20HTML)
+* [Live demo](https://happyccoding.github.io/bov_web_components/Mastering%20HTML/)
+
+### Accordion Using Javascript 
+
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/Mastering%20CSS/1.Acoordion%20using%20Javascript)
+* [Live demo](https://happyccoding.github.io/bov_web_components/Mastering%20CSS/1.Acoordion%20using%20Javascript/)
+
+### Header Navigation Bar 
+
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/Mastering%20CSS/2.Header%20Navigation%20Bar)
+* [Live demo](https://happyccoding.github.io/bov_web_components/Mastering%20CSS/2.Header%20Navigation%20Bar/)
+
+### Image Gallery 
+
+* [Repository URL](https://github.com/happyccoding/bov_web_components/tree/master/Mastering%20CSS/3.Image%20Gallery)
+* [Live demo](https://happyccoding.github.io/bov_web_components/Mastering%20CSS/3.Image%20Gallery/)
+
