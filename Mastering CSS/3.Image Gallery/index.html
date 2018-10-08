@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Project Assignment 3: Create a Simple Image Gallery</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Thumbnails at the top -->
+        <ul class="thumbnails">
+            <li class="thumbnail" id="0"><img src="https://images.pexels.com/photos/253096/pexels-photo-253096.jpeg?auto=compress&cs=tinysrgb&h=350"></li>
+            <li class="thumbnail" id="1"><img src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg"></li>
+            <li class="thumbnail" id="2"><img src="https://images.pexels.com/photos/39501/lamborghini-brno-racing-car-automobiles-39501.jpeg?auto=compress&cs=tinysrgb&h=350" ></li>
+            <li class="thumbnail" id="3"><img src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&h=350"></li>
+            <!-- Thumbnail for 5th image -->
+            <li class="thumbnail" id="4"><img src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg"></li>
+        </ul>
+        <!-- HTML Code for Images linked to the thumbnails -->
+        <div class="images">
+            <img class="image" src="https://images.pexels.com/photos/253096/pexels-photo-253096.jpeg?auto=compress&cs=tinysrgb&h=350">
+            <img class="image hidden" src="https://static.pexels.com/photos/2394/lights-clouds-dark-car.jpg">
+            <img class="image hidden" src="https://images.pexels.com/photos/39501/lamborghini-brno-racing-car-automobiles-39501.jpeg?auto=compress&cs=tinysrgb&h=350">
+            <img class="image hidden" src="https://images.pexels.com/photos/810357/pexels-photo-810357.jpeg?auto=compress&cs=tinysrgb&h=350">
+            <!-- image 5 -->
+            <img class="image hidden" src="https://static.pexels.com/photos/116675/pexels-photo-116675.jpeg">
+        </div>
+        <!-- Placeholder for 5th image -->
+    </div>
+    <script src="gallery.js"></script>
+</body>
